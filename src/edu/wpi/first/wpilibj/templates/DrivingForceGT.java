@@ -19,16 +19,16 @@ public class DrivingForceGT extends Joystick{
     static final int axisHatUD = 6;
     static final int buttonX = 1;
     static final int buttonSquare = 2;
-    static final int buttonTriangle = 3;
-    static final int buttonCircle = 4;
+    static final int buttonTriangle = 4;
+    static final int buttonCircle = 3;
     static final int buttonShiftUp = 5;
     static final int buttonShiftDown = 6;
     static final int buttonR2 = 7;
     static final int buttonL2 = 8;
-    static final int buttonR3 = 9;
-    static final int buttonL3 = 10;
-    static final int buttonSelect = 11;
-    static final int buttonStart = 12;
+    static final int buttonR3 = 11;
+    static final int buttonL3 = 12;
+    static final int buttonSelect = 9;
+    static final int buttonStart = 10;
     
     private boolean isUpshiftPressed = false;
     private boolean wasUpshiftPressed = false;
