@@ -39,15 +39,15 @@ public class DFGTChassis extends IterativeRobot {
         currentNeutralMode = NeutralMode.kCoast;
         try
         {
-            frontLeft = new CANJaguar(1);
+            frontLeft = new CANJaguar(13);
             frontLeft.configNeutralMode(currentNeutralMode);
             frontLeft.configEncoderCodesPerRev(360);
-            rearLeft = new CANJaguar(2);
+            rearLeft = new CANJaguar(4);
             rearLeft.configNeutralMode(currentNeutralMode);
-            frontRight = new CANJaguar(3);
+            frontRight = new CANJaguar(14);
             frontRight.configNeutralMode(currentNeutralMode);
             frontRight.configEncoderCodesPerRev(360);
-            rearRight = new CANJaguar(4);
+            rearRight = new CANJaguar(2);
             rearRight.configNeutralMode(currentNeutralMode);
         }
         catch (CANTimeoutException ex)
@@ -55,9 +55,9 @@ public class DFGTChassis extends IterativeRobot {
             ex.printStackTrace();
         }
         drive = new RobotDrive(frontLeft, rearLeft, frontRight, rearRight);
-        compressor = new Compressor(0,0);
-        leftShifter = new Solenoid(0);
-        rightShifter = new Solenoid(0);
+        compressor = new Compressor(14, 8);
+        leftShifter = new Solenoid(1);
+        rightShifter = new Solenoid(2);
         leftShifter.set(false);
         rightShifter.set(false);
     }
